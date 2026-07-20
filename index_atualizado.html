@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Crew Assistant AI | Produtividade Multi-Agente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            background: #050505;
+            color: #ededed;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            border-color: rgba(59, 130, 246, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3);
+        }
+
+        .animate-bg {
+            background: radial-gradient(circle at 50% 50%, #0f172a 0%, #050505 100%);
+        }
+    </style>
+</head>
+
+<body class="animate-bg">
+    <!-- Hero Section -->
+    <header class="min-h-screen flex flex-col items-center justify-center text-center px-6">
+        <div class="glass px-4 py-2 rounded-full text-sm mb-6 animate-pulse border border-blue-500/30">🚀 Versão 2.0.0
+            Disponível</div>
+        <h1 class="text-7xl font-bold mb-6 tracking-tighter">Crew Assistant <span class="gradient-text">AI</span></h1>
+        <p class="text-xl text-gray-400 max-w-2xl mb-10">O assistente de IA multi-agente para produtividade, automação e
+            criação de conteúdo. Totalmente local e privado.</p>
+        <div class="flex gap-4">
+            <a class="bg-white text-black px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+                href="#contacto">💬 Fale Connosco</a>
+            <a class="glass px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition" href="#manual">📖 Manual</a>
+        </div>
+    </header>
+    <!-- Funcionalidades -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold mb-16 text-center">Funcionalidades</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass p-8 rounded-2xl card-hover transition-all"><i class="text-blue-500 mb-4"
+                    data-lucide="bot"></i>
+                <h3 class="text-xl font-bold mb-2">Sistema Multi-Agente</h3>
+                <p class="text-gray-400">Coordenador, Pesquisador, Especialista e Redator trabalhando em conjunto.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover transition-all"><i class="text-blue-500 mb-4"
+                    data-lucide="image"></i>
+                <h3 class="text-xl font-bold mb-2">Geração de Imagens</h3>
+                <p class="text-gray-400">Criação de arte visual de alta qualidade localmente.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover transition-all"><i class="text-blue-500 mb-4"
+                    data-lucide="video"></i>
+                <h3 class="text-xl font-bold mb-2">Geração de Vídeos</h3>
+                <p class="text-gray-400">Automatização de conteúdo em vídeo com IA.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover transition-all"><i class="text-blue-500 mb-4"
+                    data-lucide="mail"></i>
+                <h3 class="text-xl font-bold mb-2">Gestão de Email</h3>
+                <p class="text-gray-400">Automação de fluxos de trabalho via email.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover transition-all"><i class="text-blue-500 mb-4"
+                    data-lucide="scan-text"></i>
+                <h3 class="text-xl font-bold mb-2">OCR</h3>
+                <p class="text-gray-400">Extração de texto inteligente de documentos.</p>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover transition-all"><i class="text-blue-500 mb-4"
+                    data-lucide="lock"></i>
+                <h3 class="text-xl font-bold mb-2">Execução Local</h3>
+                <p class="text-gray-400">Privacidade total. Seus dados nunca saem do seu computador.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Stats -->
+    <section class="py-20 glass m-6 rounded-3xl">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-5xl font-bold mb-2 text-blue-500">12+</div>
+                <div class="text-gray-400">Ferramentas</div>
+            </div>
+            <div>
+                <div class="text-5xl font-bold mb-2 text-blue-500">20+</div>
+                <div class="text-gray-400">Modelos IA</div>
+            </div>
+            <div>
+                <div class="text-5xl font-bold mb-2 text-blue-500">100%</div>
+                <div class="text-gray-400">Privado</div>
+            </div>
+            <div>
+                <div class="text-5xl font-bold mb-2 text-blue-500">∞</div>
+                <div class="text-gray-400">Possibilidades</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+
+        <h2 class="text-4xl font-bold text-center mb-12">
+            Galeria da Aplicação
+        </h2>
+
+        <div class="relative max-w-6xl mx-auto">
+
+            <div class="overflow-hidden rounded-3xl shadow-2xl">
+
+                <div id="gallery-slider" class="flex transition-transform duration-700 ease-in-out">
+
+                    <div class="min-w-full">
+                        <img src="site_crewai/imagens/Captura1_Crewai.png" class="w-full object-contain"
+                            alt="Captura 1">
+                    </div>
+
+                    <div class="min-w-full">
+                        <img src="site_crewai/imagens/Captura2_Crewai.png" class="w-full object-contain"
+                            alt="Captura 2">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Botão anterior -->
+
+            <button id="prevSlide"
+                class="absolute left-4 top-1/2 -translate-y-1/2 bg-gray-900/80 hover:bg-blue-600 text-white rounded-full w-14 h-14 text-2xl shadow-lg transition">
+
+                ❮
+
+            </button>
+
+            <!-- Botão seguinte -->
+
+            <button id="nextSlide"
+                class="absolute right-4 top-1/2 -translate-y-1/2 bg-gray-900/80 hover:bg-blue-600 text-white rounded-full w-14 h-14 text-2xl shadow-lg transition">
+
+                ❯
+
+            </button>
+
+        </div>
+
+        <!-- Indicadores -->
+
+        <div class="flex justify-center gap-3 mt-8">
+
+            <button class="dot w-4 h-4 rounded-full bg-blue-600"></button>
+            <button class="dot w-4 h-4 rounded-full bg-gray-500"></button>
+
+        </div>
+
+    </section>
+    <section class="py-20 px-6 max-w-4xl mx-auto text-center" id="contacto">
+        <h2 class="text-4xl font-bold mb-6">Como adquirir o Crew Assistant AI</h2>
+        <p class="text-gray-400 mb-6">O Crew Assistant AI está disponível através de licenciamento para utilização
+            pessoal e empresarial.</p>
+        <p class="text-gray-300 mb-8">Para solicitar uma demonstração, adquirir uma licença ou obter uma proposta
+            comercial, envie um email para:</p>
+        <p class="text-2xl font-bold text-blue-400 mb-8">suporte@crewai.pt</p>
+        <a class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition"
+            href="mailto:suporte@crewai.pt">Enviar Email</a>
+    </section>
+    <section class="py-20 px-6 max-w-7xl mx-auto" id="licencas">
+        <h2 class="text-4xl font-bold mb-16 text-center">Licenças</h2>
+        <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div class="glass p-8 rounded-2xl card-hover transition-all text-center">
+                <h3 class="text-2xl font-bold mb-4">Personal</h3>
+                <div class="text-5xl font-bold text-blue-500 mb-4">79 €</div>
+                <p class="text-gray-400">Uso doméstico (1 PC)</p>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover transition-all text-center">
+                <h3 class="text-2xl font-bold mb-4">Professional</h3>
+                <div class="text-5xl font-bold text-blue-500 mb-4">149 €</div>
+                <p class="text-gray-400">Freelancer / Programador (1 PC)</p>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover transition-all text-center">
+                <h3 class="text-2xl font-bold mb-4">Business</h3>
+                <div class="text-5xl font-bold text-blue-500 mb-4">349 €</div>
+                <p class="text-gray-400">Empresa até 10 utilizadores</p>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover transition-all text-center">
+                <h3 class="text-2xl font-bold mb-4">Business Plus</h3>
+                <div class="text-5xl font-bold text-blue-500 mb-4">599 €</div>
+                <p class="text-gray-400">Empresa até 25 utilizadores</p>
+            </div>
+            <div class="glass p-8 rounded-2xl card-hover transition-all text-center">
+                <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+                <div class="text-5xl font-bold text-blue-500 mb-4">1.290 €</div>
+                <p class="text-gray-400">Utilizadores ilimitados</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-10 border-t border-white/10 text-center text-gray-500">
+        <p class="mb-4">Crew Assistant AI - Versão 2.0.0</p>
+        <div class="flex justify-center gap-6 text-sm">
+            <a class="hover:text-white transition"
+                href="https://github.com/FranciscoMoreira91/Crew-Assistant-AI">GitHub</a>
+            <a class="hover:text-white transition" href="#">Manual</a>
+            <a class="hover:text-white transition" href="#">Licença</a>
+        </div>
+    </footer>
+    <script>
+        lucide.createIcons();
+
+
+
+        const slider = document.getElementById("gallery-slider");
+
+        const dots = document.querySelectorAll(".dot");
+
+        const totalSlides = slider.children.length;
+
+        let current = 0;
+
+        function updateSlider() {
+
+            slider.style.transform = `translateX(-${current * 100}%)`;
+
+            dots.forEach((dot, index) => {
+
+                if (index === current) {
+
+                    dot.classList.remove("bg-gray-500");
+                    dot.classList.add("bg-blue-600");
+
+                } else {
+
+                    dot.classList.remove("bg-blue-600");
+                    dot.classList.add("bg-gray-500");
+
+                }
+
+            });
+
+        }
+
+        document.getElementById("nextSlide").onclick = () => {
+
+            current++;
+
+            if (current >= totalSlides) {
+
+                current = 0;
+
+            }
+
+            updateSlider();
+
+        };
+
+        document.getElementById("prevSlide").onclick = () => {
+
+            current--;
+
+            if (current < 0) {
+
+                current = totalSlides - 1;
+
+            }
+
+            updateSlider();
+
+        };
+
+        dots.forEach((dot, index) => {
+
+            dot.onclick = () => {
+
+                current = index;
+
+                updateSlider();
+
+            };
+
+        });
+
+        setInterval(() => {
+
+            current++;
+
+            if (current >= totalSlides) {
+
+                current = 0;
+
+            }
+
+            updateSlider();
+
+        }, 5000);
+
+    </script>
+
+</body>
+
+</html>
